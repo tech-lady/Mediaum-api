@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_13_144659) do
+ActiveRecord::Schema.define(version: 2019_11_18_162613) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,10 @@ ActiveRecord::Schema.define(version: 2019_11_13_144659) do
     t.string "author"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id"
+    t.bigint "article_id"
+    t.index ["article_id"], name: "index_responses_on_article_id"
+    t.index ["user_id"], name: "index_responses_on_user_id"
   end
 
   create_table "roles", force: :cascade do |t|
@@ -56,6 +60,8 @@ ActiveRecord::Schema.define(version: 2019_11_13_144659) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "article_id"
+    t.index ["article_id"], name: "index_tags_on_article_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -64,8 +70,12 @@ ActiveRecord::Schema.define(version: 2019_11_13_144659) do
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "username"
   end
 
   add_foreign_key "assignments", "roles"
   add_foreign_key "assignments", "users"
+  add_foreign_key "responses", "articles"
+  add_foreign_key "responses", "users"
+  add_foreign_key "tags", "articles"
 end

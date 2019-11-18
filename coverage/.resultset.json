@@ -6,6 +6,11 @@
         null,
         1,
         1,
+        2,
+        2,
+        2,
+        2,
+        null,
         null
       ],
       "/Users/empath/Desktop/growth/mediaum-api/spec/rails_helper.rb": [
@@ -67,7 +72,7 @@
         null,
         null,
         1,
-        6,
+        20,
         null,
         null,
         1,
@@ -75,11 +80,11 @@
         null,
         null,
         1,
-        6,
+        20,
         null,
         null,
         1,
-        6,
+        20,
         null,
         null,
         1,
@@ -133,6 +138,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         null,
@@ -154,6 +160,11 @@
         null,
         null,
         null,
+        1,
+        null,
+        1,
+        null,
+        1,
         null,
         null
       ],
@@ -162,6 +173,14 @@
         null,
         1,
         1
+      ],
+      "/Users/empath/Desktop/growth/mediaum-api/config/spring.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
       ],
       "/Users/empath/Desktop/growth/mediaum-api/config/environments/test.rb": [
         null,
@@ -301,12 +320,26 @@
         null,
         null
       ],
+      "/Users/empath/Desktop/growth/mediaum-api/spec/factories/users.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/empath/Desktop/growth/mediaum-api/config/routes.rb": [
         1,
         null,
         null
       ],
       "/Users/empath/Desktop/growth/mediaum-api/app/models/article.rb": [
+        1,
+        1,
+        1,
+        1,
         1,
         null
       ],
@@ -336,9 +369,12 @@
         null,
         1,
         1,
+        2,
+        null,
         null
       ],
       "/Users/empath/Desktop/growth/mediaum-api/app/models/bookmark.rb": [
+        1,
         1,
         null
       ],
@@ -347,9 +383,14 @@
         null,
         1,
         1,
+        2,
+        2,
+        null,
         null
       ],
       "/Users/empath/Desktop/growth/mediaum-api/app/models/response.rb": [
+        1,
+        1,
         1,
         null
       ],
@@ -374,9 +415,12 @@
         null,
         1,
         1,
+        2,
+        null,
         null
       ],
       "/Users/empath/Desktop/growth/mediaum-api/app/models/tag.rb": [
+        1,
         1,
         null
       ],
@@ -385,7 +429,12 @@
         null,
         1,
         1,
-        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
         2,
         2,
         null,
@@ -394,12 +443,17 @@
       "/Users/empath/Desktop/growth/mediaum-api/app/models/user.rb": [
         1,
         1,
+        1,
+        1,
+        1,
         null,
+        1,
+        1,
         1,
         1,
         null
       ]
     },
-    "timestamp": 1573662989
+    "timestamp": 1574095104
   }
 }

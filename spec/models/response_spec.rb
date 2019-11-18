@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Response, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context 'Response Associations' do
+    it { should belong_to(:article) }
+    it { should belong_to(:user) }
+  end
 end
