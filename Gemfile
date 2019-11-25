@@ -3,7 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.5'
 gem 'bcrypt'
-gem 'dotenv-rails', groups: [:development, :test]
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
@@ -34,6 +33,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'factory_bot_rails', '~> 5.1', '>= 5.1.1'
   gem 'rspec-rails', '~> 3.9'
+  gem 'dotenv-rails'
 end
 
 group :development do

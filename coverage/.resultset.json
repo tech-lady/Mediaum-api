@@ -315,6 +315,22 @@
         null,
         null
       ],
+      "/Users/empath/Desktop/growth/mediaum-api/spec/factories/articles.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/empath/Desktop/growth/mediaum-api/spec/factories/comments.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/empath/Desktop/growth/mediaum-api/spec/factories/factories.rb": [
         null,
         null,
@@ -454,6 +470,6 @@
         null
       ]
     },
-    "timestamp": 1574095104
+    "timestamp": 1574683691
   }
 }

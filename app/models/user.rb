@@ -4,8 +4,8 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
   validates :password, length: { in: 6...20 }
 
-  has_many :articles
-  has_many :responses
-  has_many :assignments
+  has_many :articles, dependent: :destroy
+  has_many :responses, dependent: :destroy
+  has_many :assignments, dependent: :destroy
   has_many :roles, through: :assignments
 end
