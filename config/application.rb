@@ -12,6 +12,7 @@ require "action_mailbox/engine"
 require "action_text/engine"
 require "action_view/railtie"
 require "action_cable/engine"
+require 'dotenv/rails-now'
 # require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
@@ -21,6 +22,7 @@ Bundler.require(*Rails.groups)
 
 module MediaumApi
   class Application < Rails::Application
+    config.api_only = true
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
@@ -32,6 +34,10 @@ module MediaumApi
     # Only loads a smaller set of middleware suitable for API only apps.
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
-    config.api_only = true
+    Bundler.require(*Rails.groups)
+
+    Dotenv::Railtie.load
+
+    HOSTNAME = ENV['HOSTNAME']
   end
 end
